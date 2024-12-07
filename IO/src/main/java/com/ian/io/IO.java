@@ -19,7 +19,7 @@ public class IO {
         try {
             
             //Reading from a file 
-            FileReader reader = new FileReader("inputt.txt");
+            FileReader reader = new FileReader("input.txt");
             FileWriter writer = new FileWriter("output2.txt");
             
             int character;
