@@ -59,6 +59,21 @@ public class FileCopier {
             System.out.println("An error has occured");
             System.out.println(e.getMessage());
             
+        } finally {
+            
+            try {
+                
+                if(buffWriter != null) {
+                    buffWriter.close();
+                }
+                
+            } catch(Exception e) {
+                
+                System.out.println("An error has occured");
+                System.out.println(e.getMessage());
+                
+            }
+            
         }
         
     }
