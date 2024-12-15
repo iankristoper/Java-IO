@@ -1,0 +1,12 @@
+Directory Analysis Report
+Directory: C:\Fritzing Files\fritzing.0.9.3b.64.pc
+Total number of files: 23
+Total size of all files: 74989310 bytes
+File type breakdown:
+.dll: 17 file(s)
+.exe: 1 file(s)
+.cc-by-sa: 1 file(s)
+.gpl2: 1 file(s)
+.md: 1 file(s)
+.gpl3: 1 file(s)
+.db: 1 file(s)
