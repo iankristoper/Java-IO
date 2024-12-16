@@ -37,6 +37,7 @@ public class ContactFileList {
             switch(choice) {
                 
                 case 1:
+                    addContact(scanner);
                     break;
                     
                 case 2:
@@ -57,6 +58,7 @@ public class ContactFileList {
         
     }
     
+    //adding contact method
     public static void addContact(Scanner scanner) {
         
          System.out.print("Enter contact name: ");
@@ -65,11 +67,23 @@ public class ContactFileList {
          System.out.print("Enter contact number: ");
          String contactNumber = scanner.nextLine();
          
-         try {
+         try(FileWriter fw = new FileWriter(FILE_NAME, true); BufferedWriter bw = new BufferedWriter(fw)) {
              
+            bw.write("Name: " + contactName + ", Phone: " + contactNumber);
+            bw.newLine();
+            System.out.println("Contact added successfully!");
              
+         } catch(IOException e) {
+             
+             System.out.println("Error writing to the file: " + e.getMessage());
              
          }
+    }
+    
+    //viewing contact method 
+    public static void viewContact() {
+        
+        
         
     }
 }
